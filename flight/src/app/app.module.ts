@@ -9,6 +9,10 @@ import { AllFlightsComponent } from './pages/admin/all-flights/all-flights.compo
 import { BookingsComponent } from './pages/admin/bookings/bookings.component';
 import { CityComponent } from './pages/admin/city/city.component';
 import { NewFlightComponent } from './pages/admin/new-flight/new-flight.component';
+import { BookFlightComponent } from './pages/website/book-flight/book-flight.component';
+import { MyBookingsComponent } from './pages/website/my-bookings/my-bookings.component';
+import { SearchComponent } from './pages/website/search/search.component';
+import { WebsiteLandingComponent } from './pages/website/website-landing/website-landing.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +22,11 @@ import { NewFlightComponent } from './pages/admin/new-flight/new-flight.componen
     AllFlightsComponent,
     BookingsComponent,
     CityComponent,
-    NewFlightComponent
+    NewFlightComponent,
+    BookFlightComponent,
+    MyBookingsComponent,
+    SearchComponent,
+    WebsiteLandingComponent
   ],
   imports: [
     BrowserModule,
