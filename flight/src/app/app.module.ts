@@ -13,6 +13,8 @@ import { BookFlightComponent } from './pages/website/book-flight/book-flight.com
 import { MyBookingsComponent } from './pages/website/my-bookings/my-bookings.component';
 import { SearchComponent } from './pages/website/search/search.component';
 import { WebsiteLandingComponent } from './pages/website/website-landing/website-landing.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -26,13 +28,16 @@ import { WebsiteLandingComponent } from './pages/website/website-landing/website
     BookFlightComponent,
     MyBookingsComponent,
     SearchComponent,
-    WebsiteLandingComponent
+    WebsiteLandingComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
